@@ -1,0 +1,24 @@
+{
+  "model": "sonnet",
+  "permissions": {
+    "allow": [
+      "Bash(*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/tsukao/.local/bin/claude-usage --refresh >/dev/null 2>&1"
+          },
+          {
+            "type": "command",
+            "command": "python3 /home/tsukao/.claude/scripts/export-to-md.py"
+          }
+        ]
+      }
+    ]
+  }
+}

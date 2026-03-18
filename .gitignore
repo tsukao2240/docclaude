@@ -1,0 +1,32 @@
+# 会話ログ・セッションデータ（プライバシー）
+projects/
+sessions/
+history.jsonl
+shell-snapshots/
+file-history/
+paste-cache/
+
+# キャッシュ・一時ファイル
+cache/
+backups/
+debug/
+downloads/
+telemetry/
+session-env/
+stats-cache.json
+mcp-needs-auth-cache.json
+tmux-rate-limit-cache.json
+claude-tmux-status.json
+
+# タスク・プラン（作業中の一時データ）
+tasks/
+plans/
+todos/
+
+# 外部プラグイン（別途管理）
+plugins/
+
+# 認証情報（絶対に含めない）
+.credentials.json
+*.key
+*.pem
